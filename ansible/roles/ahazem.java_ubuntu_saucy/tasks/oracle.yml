@@ -8,7 +8,7 @@
 # Add the Webupd8 maintained PPA.
 - name: Add Webupd8 team PPA
   apt_repository:
-    repo: 'deb http://ppa.launchpad.net/webupd8team/java/ubuntu saucy main'
+    repo: 'deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main'
     state: present
 
 # Automatically accept the license.

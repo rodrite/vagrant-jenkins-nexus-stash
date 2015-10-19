@@ -43,30 +43,22 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       v.cpus = 4
     end
     
-    #nexus.vm.provision :ansible do |ansible|
-    #  ansible.playbook = "ansible/common.yml"
-    #end
+
     nexus.vm.provision :puppet, :module_path => "modules" do |puppet|
       puppet.manifests_path = "manifests"
       puppet.manifest_file = "nexus.pp"
     end
   end
 
-  config.vm.define :stash do |stash|
-    stash.vm.hostname = "stash"
+  config.vm.define :git do |git|
+    git.vm.hostname = "git"
 
-    stash.vm.provider "virtualbox" do |v|
+    git.vm.provider "virtualbox" do |v|
       v.memory = 2096
       v.cpus = 4
     end
     
-    stash.vm.network :forwarded_port, guest: 7990, host: 7990
-    stash.vm.network :private_network, ip: "192.168.25.40";
-    
-
-    stash.vm.provision :puppet, :module_path => "modules" do |puppet|
-      puppet.manifests_path = "manifests"
-      puppet.manifest_file  = "default.pp"
-    end
+    git.vm.network :forwarded_port, guest: 7990, host: 7990
+    git.vm.network :private_network, ip: "192.168.25.40";
   end
 end
