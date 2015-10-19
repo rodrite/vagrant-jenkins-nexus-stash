@@ -1,6 +1,6 @@
-vagrant-jenkins-nexus-stash
+vagrant-jenkins-nexus
 ===========================
 
-Vagrant configuration for using and starting three servers: Jenkins, Nexus and Atlassian Stash. 
+Vagrant configuration for using and starting two servers: Jenkins and Nexus. 
 
-The Stash instance still needs a valid license file. 
+We had removed Atlassian Stash and we'll include an alternative like gitlab.

@@ -1,7 +1,7 @@
 
 ## Nexus Setup Setting Section
 nexus_host               : "{{ansible_fqdn}}"
-nexus_version            : "2.7.1"
+nexus_version            : "2.11.4-01"
 nexus_download_URL       : "http://download.sonatype.com/nexus/oss/{{nexus_archive}}"
 ### Jetty
 jetty_bind               : "0.0.0.0"

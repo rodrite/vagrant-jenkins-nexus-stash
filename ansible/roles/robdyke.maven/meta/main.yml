@@ -75,6 +75,7 @@ galaxy_info:
     - raring
     - saucy
     - trusty
+    - vivid
   - name: SLES
     versions:
     - all
