@@ -8,10 +8,10 @@ Install Maven in latest version from upstream.
   - Default: 3
 
 - maven_version_minor
-  - Default: 2
+  - Default: 3
 
 - maven_version_patch
-  - Default: 1
+  - Default: 3
 
 - maven_mirror
   - Configure the mirror to download Maven.
@@ -19,7 +19,7 @@ Install Maven in latest version from upstream.
 
 - maven_redis_shad256sum
   - SHA256 sum for the downloaded Maven redistributable package.
-  - Default: cdee2fd50b2b4e34e2d67d01ab2018b051542ee759c07354dd7aed6f4f71675c
+  - Default: 3a8dc4a12ab9f3607a1a2097bbab0150c947ad6719d8f1bb6d5b47d0fb0c4779
 
 - maven_bin_path
   - Directory where to symlink the mvn binary to.
